@@ -1,18 +1,19 @@
+@import 'tachyons';
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap');
 
-.light-time {
-  --cl-primary-100: #efe6dd;
-  --cl-primary-200: #e9d3c0;
+.light-theme {
+  --cl-primary-100: #e7d8cb;
+  --cl-primary-200: #efe6dd;
   --cl-accent: #bb4430;
-  --text-primary-200: #2a2828;
-  --text-primary-100: #231f20;
+  --text-primary-200: #231f20;
+  --text-primary-100: #292425;
 }
 .dark-theme {
-  --cl-primary-100: #2a2828;
+  --cl-primary-100: #292425;
   --cl-primary-200: #231f20;
   --cl-accent: #7ebdc2;
   --text-primary-200: #efe6dd;
-  --text-primary-100: #e9d3c0;
+  --text-primary-100: #e7d8cb;
 }
 .font {
   --ff-primary: 'Roboto', sans-serif;
@@ -33,9 +34,22 @@ ol,
 p {
   margin: 0;
 }
+h1,
+h2,
+h3 {
+  font-family: var(--ff-accent);
+  line-height: 1;
+}
+span,
+p,
+div {
+  font-family: var(--ff-primary);
+}
 .app {
-  background-color: var(--cl-primary-100);
+  background-color: var(--cl-primary-200);
   color: var(--text-primary-200);
-  line-height: 1.5;
   height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }

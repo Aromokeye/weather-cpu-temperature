@@ -1,0 +1,9 @@
+.title {
+  height: 100%;
+  width: 20%;
+  background-color: var(--cl-primary-100);
+  color: var(--text-primary-200);
+}
+.icon {
+  color: var(--cl-accent);
+}
