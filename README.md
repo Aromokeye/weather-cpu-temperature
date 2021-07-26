@@ -44,6 +44,10 @@ $ yarn start
 
 ## :memo:
 
+###
+
+Ensure to run terminal code as administrator. This helps to read native OS CPU values
+
 ### Test
 
 Only the Asynchronous call to weather API has been unit tested

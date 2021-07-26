@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useEffect, useState } from 'react';
 import { ITempState } from '../../Store/Reducer';
@@ -44,7 +45,7 @@ const Correlation: React.FC<Props> = ({ data }) => {
   useEffect(() => {
     if (correlation) {
       const figure = correlation.correlationCoefficient.toFixed(1);
-      if (figure === 0 && figure <= 0.199) {
+      if (figure === 0 || figure <= 0.199) {
         setDefinition('Very Weak');
       } else if (figure >= 0.2 && figure <= 0.399) {
         setDefinition('Weak');
@@ -61,13 +62,11 @@ const Correlation: React.FC<Props> = ({ data }) => {
   }, [correlation]);
 
   return (
-    <div className="ba bw0 shadow-1 br4 mh3 mv2 pa2 db flex justify-center itemscenter correlation">
-      <span className="self-end pb3 mr2">
-        Correlation: {definition && definition}
-      </span>
+    <div className="ba bw0 shadow-1 br4 mh3 mv2 pa2 db flex flex-column justify-center items-center correlation">
       <h1 className="f-headline accent1">
         {correlation && correlation.correlationCoefficient.toFixed(1)}
       </h1>
+      <span className="f5 b">Correlation: {definition && definition}</span>
     </div>
   );
 };

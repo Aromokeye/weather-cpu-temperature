@@ -65,18 +65,18 @@ const Chart: React.FC<Props> = ({ stateData }) => {
             type="number"
             label={{ value: 'Temperature', angle: -90, position: 'insideLeft' }}
           />
-          <Scatter name="CPU" dataKey="CPU" fill="#bb4430" />
-          <Scatter name="Weather" dataKey="Weather" fill="#7ebdc2" />
+          <Scatter name="CPU" dataKey="CPU" fill="#7ebdc2" />
+          <Scatter name="Weather" dataKey="Weather" fill="#bb4430" />
           <Line
             dataKey="CPU"
-            stroke="#bb4430"
+            stroke="#7ebdc2"
             dot={false}
             activeDot={false}
             legendType="none"
           />
           <Line
             dataKey="Weather"
-            stroke="#7ebdc2"
+            stroke="#bb4430"
             dot={false}
             activeDot={false}
             legendType="none"
