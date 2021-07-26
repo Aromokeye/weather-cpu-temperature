@@ -21,7 +21,7 @@ const App = () => {
   // populate temperature list after every one minutes
   const samplesize = 10;
   useEffect(() => {
-    const interval = 6000;
+    const interval = 60000;
     const isTrue =
       state.cpuTemperatureList.length < samplesize &&
       state.weatherTemperatureList.length < samplesize;
