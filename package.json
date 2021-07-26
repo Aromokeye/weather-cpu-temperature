@@ -92,28 +92,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/electron-react-boilerplate/electron-react-boilerplate.git"
+    "url": "git+https://github.com/Aromokeye/weather-cpu-temperature"
   },
-  "author": {
-    "name": "Electron React Boilerplate Maintainers",
-    "email": "electronreactboilerplate@gmail.com",
-    "url": "https://electron-react-boilerplate.js.org"
-  },
-  "contributors": [
-    {
-      "name": "Amila Welihinda",
-      "email": "amilajack@gmail.com",
-      "url": "https://github.com/amilajack"
-    },
-    {
-      "name": "John Tran",
-      "email": "jptran318@gmail.com",
-      "url": "https://github.com/jooohhn"
-    }
-  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/electron-react-boilerplate/electron-react-boilerplate/issues"
+    "url": "https://github.com/Aromokeye/weather-cpu-temperature"
   },
   "keywords": [
     "electron",
@@ -126,7 +109,7 @@
     "hot",
     "reload"
   ],
-  "homepage": "https://github.com/electron-react-boilerplate/electron-react-boilerplate#readme",
+  "homepage": "https://github.com/Aromokeye/weather-cpu-temperature#readme",
   "jest": {
     "testURL": "http://localhost/",
     "moduleNameMapper": {
@@ -251,16 +234,22 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
+    "axios": "^0.21.1",
+    "calculate-correlation": "^1.2.2",
     "electron-debug": "^3.1.0",
     "electron-log": "^4.2.4",
     "electron-updater": "^4.3.4",
     "history": "^5.0.0",
+    "jest-fetch-mock": "^3.0.3",
+    "node-correlation": "^1.0.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "recharts": "^2.0.10",
     "regenerator-runtime": "^0.13.5",
     "source-map-support": "^0.5.19",
+    "statistics.js": "^1.0.0",
+    "systeminformation": "^5.7.8",
     "tachyons": "^4.12.0"
   },
   "devEngines": {

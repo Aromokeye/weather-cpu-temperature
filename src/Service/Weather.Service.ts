@@ -1,12 +1,12 @@
-// interface for http call function; axios, fetch or any other
-export interface IFetch {
-  (input: string): Promise<Response>;
-}
-
+/* eslint-disable no-console */
 // call definition to make get request to open weather
-export const getCurrentWeather = async (fetch: IFetch, endPoint: string) => {
+// eslint-disable-next-line import/prefer-default-export
+export const getCurrentWeather = async (endPoint: string) => {
   try {
-    const response = await fetch(`${endPoint}`);
+    const response = await fetch(endPoint, {
+      method: 'GET',
+      headers: { Accept: '*/*' },
+    });
     const body = await response.json();
     return body;
   } catch (error) {

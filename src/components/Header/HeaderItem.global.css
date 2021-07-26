@@ -1,0 +1,10 @@
+.headerItem {
+  background-color: var(--cl-primary-100);
+}
+
+.accent1 {
+  color: var(--cl-accent);
+}
+.accent2 {
+  color: var(--cl-accent2);
+}

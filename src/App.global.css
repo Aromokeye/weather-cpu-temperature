@@ -5,6 +5,7 @@
   --cl-primary-100: #e7d8cb;
   --cl-primary-200: #efe6dd;
   --cl-accent: #bb4430;
+  --cl-accent2: #7ebdc2;
   --text-primary-200: #231f20;
   --text-primary-100: #292425;
 }
@@ -12,6 +13,7 @@
   --cl-primary-100: #292425;
   --cl-primary-200: #231f20;
   --cl-accent: #7ebdc2;
+  --cl-accent2: #bb4430;
   --text-primary-200: #efe6dd;
   --text-primary-100: #e7d8cb;
 }
@@ -51,5 +53,5 @@ div {
   height: 100vh;
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
