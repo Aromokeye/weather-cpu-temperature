@@ -46,8 +46,14 @@ $ yarn start
 # The server will initialize in the <http://localhost:3000>
 ```
 
-## :memo: Test
+## :memo:
+
+### Test
 
 Only the Asynchronous call to weather API has been unit tested
 
-<a href="#top">Back to top</a>
+### Next Improvements
+
+1. Tray and Notification functionalities
+2. Forms for setting variables and time intervals
+   <a href="#top">Back to top</a>
