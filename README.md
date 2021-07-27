@@ -9,7 +9,6 @@
 Does the weather influence my computer’s core temperature?
 Open the app to know if yes
 
-## :sparkles: Features
 
 ## :rocket: Technologies
 
@@ -39,7 +38,6 @@ $ yarn
 # Run the project
 $ yarn start
 
-# The server will initialize in the <http://localhost:3000>
 ```
 
 ## :memo:
