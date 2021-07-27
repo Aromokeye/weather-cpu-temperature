@@ -45,18 +45,18 @@ const Correlation: React.FC<Props> = ({ data }) => {
   useEffect(() => {
     if (correlation) {
       const figure = correlation.correlationCoefficient.toFixed(1);
-      if (figure === 0 || figure <= 0.199) {
-        setDefinition('Very Weak');
+      if (figure >= 0 && figure <= 0.199) {
+        setDefinition('Very Weak Relationship');
       } else if (figure >= 0.2 && figure <= 0.399) {
-        setDefinition('Weak');
+        setDefinition('Weak Relationship');
       } else if (figure >= 0.4 && figure <= 0.599) {
-        setDefinition('Medium');
+        setDefinition('Moderate Relationship');
       } else if (figure >= 0.6 && figure <= 0.799) {
-        setDefinition('Strong');
+        setDefinition('Strong Relationship');
       } else if (figure >= 0.8 && figure === 1.0) {
-        setDefinition('Very Strong');
-      } else if (figure === -1) {
-        setDefinition('Inverse');
+        setDefinition('Very Strong Relationship');
+      } else if (figure <= -1) {
+        setDefinition('Negative Relationship');
       }
     }
   }, [correlation]);
@@ -64,7 +64,8 @@ const Correlation: React.FC<Props> = ({ data }) => {
   return (
     <div className="ba bw0 shadow-1 br4 mh3 mv2 pa2 db flex flex-column justify-center items-center correlation">
       <h1 className="f-headline accent1">
-        {correlation && correlation.correlationCoefficient.toFixed(1)}
+        {correlation &&
+          parseFloat(correlation.correlationCoefficient.toFixed(2))}
       </h1>
       <span className="f5 b">Correlation: {definition && definition}</span>
     </div>
